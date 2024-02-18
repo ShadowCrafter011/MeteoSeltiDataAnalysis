@@ -20,3 +20,11 @@ Simply run [update_measurements.py](update_measurements.py): `python update_meas
 If there is already a measurement snapshot it will be renamed with using the timestamp it was created at. If there is not a snapshot it will just create a new file with the data.
 
 Either way after having run the updater the up to date measurements will be located here: `data/measurements.csv`
+
+## Plotting
+
+This section describes how the different plotters in [plotting](plotting) behave and what they plot.
+
+### [Average min max](plotting/temp_average_min_max.py)
+
+This plotter uses months as major ticks and displays the daily average, minimum and maximum temperature
