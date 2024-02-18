@@ -33,8 +33,7 @@ def main():
     df = df.set_index("datetime")
     df = df.tz_localize("utc")
     df = df.tz_convert("Europe/Zurich")
-    for col in ["id", "measured_at", "created_at", "updated_at"]:
-        df = df.drop(col, axis="columns")
+    df = df.drop(["id", "measured_at", "created_at", "updated_at"], axis="columns")
     df.insert(0, "month", df.index.strftime("%Y%m01"))
     df.insert(1, "day", df.index.strftime("%Y%m%d"))
     df.to_csv("data/measurements.csv")
