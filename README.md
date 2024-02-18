@@ -2,12 +2,6 @@
 
 All python files are designed to be run from the project root directory.
 
-## Util package
-
-Since access to the measurement data is frequent and parsing the `measurements.csv` file is not perfect out of the box there exists a util package in this project. It must be installed in the used pip environment: `pip install -e util`
-
-If you are using a virtual environment (which is recommended) the command most likely is `venv/Scripts/pip.exe install -e util` (Windows).
-
 ## Pulling/updating data
 
 Measurement data is keept in the `data` directory. The measurement files are not checked into git as they are quite large.
