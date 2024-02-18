@@ -23,5 +23,6 @@ def main():
     capture_cmd = r"\COPY measurements TO 'data/measurements.csv' WITH (FORMAT csv, DELIMITER ',',  HEADER true);"
     os.system(f"heroku pg:psql -a meteoselti -c \"{capture_cmd}\"")
 
+
 if __name__ == "__main__":
     main()
