@@ -28,3 +28,7 @@ This section describes how the different plotters in [plotting](plotting) behave
 ### [Average min max](plotting/temp_average_min_max.py)
 
 This plotter uses months as major ticks and displays the daily average, minimum and maximum temperature
+
+### [Climate diagram](plotting/temp_precipitation.py)
+
+Plots temperature and precipitation in the same diagram and shades in the areas like [this example](https://de.wikipedia.org/wiki/Klimadiagramm#/media/Datei:Klimadiagramm-deutsch-Bombay-Indien.png)
