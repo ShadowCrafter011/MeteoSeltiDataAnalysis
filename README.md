@@ -21,6 +21,16 @@ If there is already a measurement snapshot it will be renamed with using the tim
 
 Either way after having run the updater the up to date measurements will be located here: `data/measurements.csv`
 
+## Extremes
+
+This section describes how the extreme weather detectors work in [extremes](extremes)
+
+### [Dry periods](extremes/dry_periods.py)
+
+According to the [drought definition](https://www.meteoschweiz.admin.ch/wetter/wetter-und-klima-von-a-bis-z/duerre.html) from MeteoSwiss droughts last as long as less than 1mm of precipitation are measured at a given station.
+
+The drought detector finds all possible droughts in the dataset, filters out every drought of length of 5 days or less and displays them in descending order.
+
 ## Plotting
 
 This section describes how the different plotters in [plotting](plotting) behave and what they plot.
@@ -32,3 +42,7 @@ This plotter uses months as major ticks and displays the daily average, minimum 
 ### [Climate diagram](plotting/temp_precipitation.py)
 
 Plots temperature and precipitation in the same diagram and shades in the areas like [this example](https://de.wikipedia.org/wiki/Klimadiagramm#/media/Datei:Klimadiagramm-deutsch-Bombay-Indien.png)
+
+### [Daily precipitation](plotting/daily_precip.py)
+
+Simply adds up the precipitation for each day and displays it in a graph. Useful to see the drought periods detected by the [drought detector](extremes/dry_periods.py).
