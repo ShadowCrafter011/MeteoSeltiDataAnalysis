@@ -46,3 +46,7 @@ Plots temperature and precipitation in the same diagram and shades in the areas 
 ### [Daily precipitation](plotting/daily_precip.py)
 
 Simply adds up the precipitation for each day and displays it in a graph. Useful to see the drought periods detected by the [drought detector](extremes/dry_periods.py).
+
+### [Temperature wind direction scatter plot](plotting/temp_wind_dir.py)
+
+Plots the average hourly/daily/monthly temperature and wind direction in a scatter plot.
