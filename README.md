@@ -31,6 +31,10 @@ According to the [drought definition](https://www.meteoschweiz.admin.ch/wetter/w
 
 The drought detector finds all possible droughts in the dataset, filters out every drought of length of 5 days or less and displays them in descending order.
 
+### [Hot periods](extremes/hot_periods.py)
+
+This extreme weather condition detector looks for periods of seven days or more with a daily maximal temperature of 30 degrees or more.
+
 ## Plotting
 
 This section describes how the different plotters in [plotting](plotting) behave and what they plot.
