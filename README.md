@@ -50,3 +50,7 @@ Simply adds up the precipitation for each day and displays it in a graph. Useful
 ### [Temperature wind direction scatter plot](plotting/temp_wind_dir.py)
 
 Plots the average hourly/daily/monthly temperature and wind direction in a scatter plot.
+
+### [Air pressure precipitation scatter plot](plotting/pressure_precipitation.py)
+
+Plots the average hourly/daily/monthly air pressure and the precipitation sum for that period in a scatter plot.
