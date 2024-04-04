@@ -35,6 +35,10 @@ The drought detector finds all possible droughts in the dataset, filters out eve
 
 This extreme weather condition detector looks for periods of seven days or more with a daily maximal temperature of 30 degrees or more.
 
+### [Cold periods](extremes/cold_periods.py)
+
+This extreme weather condition detector looks for periods of seven days or more with a daily maximal temperature of 0 degrees or less.
+
 ## Plotting
 
 This section describes how the different plotters in [plotting](plotting) behave and what they plot.
