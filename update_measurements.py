@@ -36,6 +36,7 @@ def main():
     df = df.drop(["id", "measured_at", "created_at", "updated_at"], axis="columns")
     df.insert(0, "month", df.index.strftime("%Y%m01"))
     df.insert(1, "day", df.index.strftime("%Y%m%d"))
+    df.insert(2, "hour", df.index.strftime("%Y%m%d%H"))
     df.to_csv("data/measurements.csv")
 
 
