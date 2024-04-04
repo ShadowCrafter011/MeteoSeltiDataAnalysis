@@ -39,6 +39,10 @@ This extreme weather condition detector looks for periods of seven days or more 
 
 This extreme weather condition detector looks for periods of seven days or more with a daily maximal temperature of 0 degrees or less.
 
+### [Wind speed](extremes/wind_speed.py)
+
+This detector looks for average hourly wind speeds above a given value. Works in km/h.
+
 ## Plotting
 
 This section describes how the different plotters in [plotting](plotting) behave and what they plot.
