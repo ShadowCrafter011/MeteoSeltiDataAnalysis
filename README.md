@@ -50,9 +50,11 @@ This detector looks for average hourly wind speeds above a given value. Works in
 
 This section describes how the different plotters in [plotting](plotting) behave and what they plot.
 
-### [Average min max](plotting/temp_average_min_max.py)
+### [Temperature history](plotting/temperature_history.py)
 
-This plotter uses months as major ticks and displays the daily average, minimum and maximum temperature.
+This plotter uses temperature data from Basel / Binningen which is homogenised for the altitude change using [this guide by MeteoSwiss](https://www.meteoswiss.admin.ch/weather/weather-and-climate-from-a-to-z/temperature/decreases-in-temperature-with-altitude.html). The difference from the norm defined by MeteoSwiss is displayed in red if its positive, in blue otherwise.
+
+I aimed to recreate [this temperature history graph from MeteoSwiss](https://www.meteoschweiz.admin.ch/service-und-publikationen/applikationen/ext/climate-overview-series-public.html).
 
 ### [Climate diagram](plotting/temp_precipitation.py)
 
