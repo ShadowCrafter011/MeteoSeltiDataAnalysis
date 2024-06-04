@@ -1,0 +1,47 @@
+Bundesamt für Meteorologie und Klimatologie, MeteoSchweiz
+Operation Center 1
+Postfach 257
+8058 Zürich-Flughafen
+
+stn yyyyMMddHHmm
+
+stn Stationskürzel
+y   Jahr
+M   Monat
+d   Tag
+H   Stunde
+m   Minute
+
+Zeitangaben in UTC: 00:40 UTC = 02:40 Sommerzeit
+                              = 01:40 Winterzeit
+
+Zeitbezug bei Stundenwerten, sofern in der Parameterbeschreibung nicht anders vermerkt: HH  = (HH-1):01 - HH:00
+Beispiel: 13 = beinhaltet Messperiode von 12:01 bis 13:00 
+
+Fehlende Messwerte sind gekenntzeichnet mit '-'
+
+Qualitätsinformationen: Die Legende zu den Qualitätsinformationen ist zu finden unter: https://gate.meteoswiss.ch/idaweb/text/datenqualitaet_legende_de.pdf
+
+ 
+
+
+
+
+Stationen
+---------
+stn       Name                                 Parameter        Datenquelle                                        Länge/Breite             Koordinaten [km] Höhe ü. M. [m]
+BAS       Basel / Binningen                    uto200s0         MeteoSchweiz                                       7°35'/47°32'             610908/265611    316
+BAS       Basel / Binningen                    tre200s0         MeteoSchweiz                                       7°35'/47°32'             610908/265611    316
+BAS       Basel / Binningen                    rre150z0         MeteoSchweiz                                       7°35'/47°32'             610908/265611    316
+BAS       Basel / Binningen                    rco150z0         MeteoSchweiz                                       7°35'/47°32'             610908/265611    316
+BAS       Basel / Binningen                    sre000z0         MeteoSchweiz                                       7°35'/47°32'             610908/265611    316
+
+Parameter
+---------
+          Einheit                              Beschreibung
+uto200s0  g/m³                                 Absolute Luftfeuchtigkeit 2 m über Boden; Momentanwert
+tre200s0  °C                                   Lufttemperatur 2 m über Boden; Momentanwert
+rre150z0  mm                                   Niederschlag; Zehnminutensumme
+rco150z0  min                                  Niederschlagsdauer; Zehnminutensumme
+sre000z0  min                                  Sonnenscheindauer; Zehnminutensumme
+
