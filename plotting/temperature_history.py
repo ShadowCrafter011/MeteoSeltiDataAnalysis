@@ -7,6 +7,7 @@ import numpy as np
 def main():
     df = pd.read_csv("data/measurements.csv", index_col=0, parse_dates=["dayinyear"], date_format="%m%d").sort_index()
     temps_meteoswiss = pd.read_csv("meteoswiss/1864_temp/data.csv", sep=";", index_col=1, parse_dates=["time"])
+    
     # https://www.meteoswiss.admin.ch/weather/weather-and-climate-from-a-to-z/temperature/decreases-in-temperature-with-altitude.html
     # Estimate temperature change for elevation change
     temps_meteoswiss["tre200d0"].add(0.65 * (475 - 315) / 100)

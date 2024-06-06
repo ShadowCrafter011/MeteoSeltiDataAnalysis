@@ -71,3 +71,11 @@ Plots the average hourly/daily/monthly temperature and wind direction in a scatt
 ### [Air pressure precipitation scatter plot](plotting/pressure_precipitation.py)
 
 Plots the average hourly/daily/monthly air pressure and the precipitation sum for that period in a scatter plot.
+
+### [Estimated sunshine duration](plotting/estimated_sunshine_duration.py)
+
+Using the data from CloudyAI the estimated sunshine duration per das is calculated and plottet. Data from MeteoSwiss in Binningen is plotted as well as reference.
+
+Because all measurements occur in 5 minute intervals a status of sunny is interpreted as 5 minutes of sun. A status of between is interpreted as 3 minutes and cloudy as 0. If there are measurements missing because of outages or other reasons the estimated sunshine duration will almost certainly be lower than the actual sunshine duration. That with the fact that CloudyAI is not very accurate and sometimes makes false predictions the estimated sunshine duration is higher than daylight hours for that given day.
+
+Daylight hourse are plottet as dashed line and the data comes from https://gml.noaa.gov/grad/solcalc/ for the location of the weather station in Seltisberg. It does not take the horizon and hills into account but it is the best I have found so far. For simplicity data for 2024 is used. This might lead so some minor inaccuracies.
