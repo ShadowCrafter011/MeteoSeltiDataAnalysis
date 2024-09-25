@@ -30,8 +30,8 @@ def main():
     dry_periods = list(filter(lambda x: x["length"] > 5, dry_periods))
     dry_periods = list(sorted(dry_periods, key=lambda x: x["length"], reverse=True))
     
-    for dry_period in dry_periods:
-        print(f"Dry period from {dry_period['start']} to {dry_period['end']} with a length of {dry_period['length']} days")
+    for i, dry_period in enumerate(dry_periods):
+        print(f"{i + 1}. Dry period from {dry_period['start'].strftime("%Y-%m-%d")} to {dry_period['end'].strftime("%Y-%m-%d")} with a length of {dry_period['length']} days")
 
 
 if __name__ == "__main__":

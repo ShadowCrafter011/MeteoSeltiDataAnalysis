@@ -4,7 +4,7 @@ All python files are designed to be run from the project root directory.
 
 ## Pulling/updating data
 
-Measurement data is keept in the `data` directory. The measurement files are not checked into git as they are quite large.
+Measurement data is keept in the `data` directory.
 
 ### Requirements
 
@@ -45,6 +45,14 @@ This extreme weather condition detector looks for periods of seven days or more 
 ### [Wind speed](extremes/wind_speed.py)
 
 This detector looks for average hourly wind speeds above a given value. Works in km/h.
+
+### [Raindrop volume](extremes/raindrop_volume.py)
+
+This extreme detector find the 5 largest measured raindrop volumes in the dataset.
+
+### [Precipitation amount](extremes/precipitation_amount.py)
+
+Finds 5 entries for most precipitation in 5 minutes, 1 hour and 1 day.
 
 ## Plotting
 

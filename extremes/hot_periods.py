@@ -14,7 +14,7 @@ def main():
         temp = temperature.iloc[i]
         day = dates[i]
         if temp < 30:
-            if num >= 7:
+            if num >= 5:
                 hot_weeks.append((start, day, num))
 
             start = None
