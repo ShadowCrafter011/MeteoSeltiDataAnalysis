@@ -13,6 +13,8 @@ def main():
     plt.gca().format_xdata = mdates.DateFormatter('%Y-%m-%d')
 
     precip.plot()
+    plt.xlabel("")
+    plt.ylabel("Precipitation [mm]")
     plt.show()
 
 
