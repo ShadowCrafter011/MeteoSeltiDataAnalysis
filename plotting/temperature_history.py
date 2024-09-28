@@ -10,7 +10,7 @@ def main():
     
     # https://www.meteoswiss.admin.ch/weather/weather-and-climate-from-a-to-z/temperature/decreases-in-temperature-with-altitude.html
     # Estimate temperature change for elevation change
-    temps_meteoswiss["tre200d0"].add(0.65 * (475 - 315) / 100)
+    temps_meteoswiss["tre200d0"].sub(0.65 * (475 - 315) / 100)
     temps_meteoswiss.insert(0, "dayinyear", temps_meteoswiss.index.strftime("%m%d"))
     norm_meteoswiss = temps_meteoswiss[
         (temps_meteoswiss.index > np.datetime64("1991-01-01", "ns")) &
