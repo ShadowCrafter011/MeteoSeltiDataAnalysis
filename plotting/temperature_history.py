@@ -56,12 +56,12 @@ def main():
 
     # Text
     plt.legend([
-        "Daily norm average in Binningen 1991 - 2020",
-        "Deviation above the norm this year",
-        "Deviation below the norm this year",
-        "Maximum since 1864 in Binningen",
-        "Minimum since 1864 in Binningen",
-        "Standard deviation of the norm"
+        "Täglicher Durschnitt der Norm in Binningen 1991 - 2020",
+        "Abweichung über der Norm dieses Jahr",
+        "Abweichung unter der Norm dieses Jahr",
+        "Maximum seit 1864 in Binningen",
+        "Minimum seit 1864 in Binningen",
+        "Standardabweichung der Norm"
     ])
     plt.grid(linestyle="dotted")
     plt.title(r"Daily temperature average/min/max [$\degree$C]")

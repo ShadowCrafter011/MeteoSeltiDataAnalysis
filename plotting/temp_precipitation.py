@@ -21,7 +21,7 @@ def main():
     x_axis.set_major_locator(mdates.MonthLocator())
 
     ax.plot(x, temperature, color="red")
-    ax.set_ylabel(r"Temperature [$\degree$C]", color="red")
+    ax.set_ylabel(r"Lufttemperatur [$\degree$C]", color="red")
     ax.tick_params(axis="y", colors="red")
 
     ax.plot(x, precipitation)
@@ -33,7 +33,7 @@ def main():
     ticks = np.arange(0, max_tick_val, tick_inverval)
 
     secax = ax.secondary_yaxis("right")
-    secax.set_ylabel("Precipitation [mm]", color="blue")
+    secax.set_ylabel("Niederschlag [mm]", color="blue")
     secax.tick_params(axis="y", colors="blue")
 
     # Set ticks
